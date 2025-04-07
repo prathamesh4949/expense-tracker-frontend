@@ -1,0 +1,78 @@
+/* Dashboard Main Container */
+.dashboard-container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  /* Dashboard Title */
+  .dashboard-title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  /* Budget Warnings */
+  .warning-box {
+    background: #fffae6;
+    color: #d9534f;
+    font-weight: bold;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+  }
+  
+  /* Grid Layout for Charts */
+  .charts-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    justify-content: center;
+  }
+  
+  /* Individual Chart Styling */
+  .chart-card {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .chart-card:hover {
+    transform: scale(1.05);
+  }
+  
+  /* Centered Pie Chart */
+  .pie-chart-container {
+    grid-column: span 2; /* Make Pie Chart take full width */
+    display: flex;
+    justify-content: center;
+  }
+  
+  /* Standard Chart Titles */
+  .chart-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  /* Standard Chart Sizes */
+  .chart-wrapper {
+    width: 400px;
+    height: 300px;
+    margin: auto;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .charts-container {
+      grid-template-columns: 1fr;
+    }
+    .pie-chart-container {
+      grid-column: span 1;
+    }
+  }
+  
